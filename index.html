@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>App - products</title>
+</head>
+<body>
+
+    <nav class="navbar nnavbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./public/imgs/MYN.png" alt="logo-myn" width="200" height="100">
+            </a>
+        </div>
+      </nav>
+    
+    <div class="container pt-5">
+
+        <div class="row">
+            <div class="col-md-4">
+                <form id="products-form">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Add product</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label class="form-label" for="Name">Name:</label>
+                                <input id="name" class="form-control" name="name" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="Name">Price:</label>
+                                <input id="price" class="form-control" name="price" min="1" type="number">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="Name">Year:</label>
+                                <input id="year" class="form-control" name="year" type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <button id="btn-add" type="submit" class="btn btn-success mt-3 w-100">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="lits-products" class="col-md-8">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./public/js/main.js"></script>
+</html>
